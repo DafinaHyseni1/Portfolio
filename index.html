@@ -10,33 +10,57 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 <body>
-    <section id="home">
-        <div class="content">
-            <h1 class="title">Welcome to Dafina’s Portfolio</h1>
-            <p class="subtitle">Here’s a peek at the projects I’ve been working on. Each one shows a piece of my process, my ideas, and my growth as a creator.</p>
-            <button id="explore-btn">Join my Journery</button>
+  <header class="navbar">
+    <div class="nav-container">
+
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="moon"></div>
-        <div class="highlight"></div>
     </div>
-    </section>
+</header>
+
+
+<section id="home">
+    <div class="content">
+        <h1 class="title"><span id="typing"></span></h1>
+
+        <p class="subtitle">
+            Here’s a peek at the projects I’ve been working on. Each one shows a piece of my process, my ideas, and my growth as a creator.
+        </p>
+
+        <button id="explore-btn">Join my Journey</button>
+    </div>
+
+    <div class="moon">
+        <div class="moon-shadow"></div>
+    </div>
+</section>
     
 <section id="about" class="section about-section">
+  <div class="about-stars"></div>
     <div class="about-container">
         <div class="about-text">
             <h2>About Me</h2> 
             <p>
-               Hi, I'm Dafina! I’m a passionate web developer who loves creating websites that are both beautiful and functional. I enjoy bringing creativity and problem-solving into every project, making sure each site is intuitive, engaging, and leaves a lasting impression.
-            </p>
+Hi, I’m Dafina — a web developer passionate about building websites that are both visually engaging and highly functional. I enjoy combining creativity with problem-solving to create intuitive, efficient, and impactful digital experiences.            </p>
             <br>
             <p>
-               I specialize in building interactive, dynamic websites that perform efficiently and provide a seamless user experience. My journey began with a fascination for coding, and over time, I’ve turned that passion into a fulfilling career. I’m always excited to learn new things, tackle challenges, and explore the latest technologies to grow as a developer.
-            </p>
+I specialize in developing dynamic, interactive websites with a focus on performance and seamless user experience. What started as a curiosity for coding has grown into a dedicated career, where I continuously challenge myself to learn, adapt, and work with modern technologies to deliver meaningful and high-quality solutions.            </p>
             <a href="https://drive.google.com/file/d/179NpW2RTn8sWEyAoTyr-JTdRBCchSxDV/view?usp=sharing" download class="download-cv-btn">Download CV</a>
         </div>
 
         <div class="about-image">
-            <img src="dafina.png"/>
+            <img src="assets/dafina.png"/>
         </div>
     </div>
 </section>
@@ -45,126 +69,127 @@
     <div class="skills-section">
         <h3>Technical Skills</h3>
         <ul class="skills-list">
-            <li>🌐 Frontend  & UI/UX : HTML, CSS, JavaScript,React, Wordpress, Figma</li>
+            <li>🌐 Frontend & UI/UX : HTML, CSS/SCSS, Javascript, Figma </li>
+            <li> Backend & CMS : PHP , WordPress , Twig , WooCommerce , ACF</li>
             <li>⚙️ DataBase: Oracle, SQL </li>
-            <li>🛠️ Tools & Libraries: Git, Bootstrap, Tailwind</li>
+            <li>🛠️ Tools & Libraries: Git, Bootstrap, Tailwind, Figma</li>
         </ul>
     </div>
 
- <section>
+ <section id="experience">
   <div class="experience-interests">
     <div class="experience hidden-left">
-      <h3>Experience</h3>
-      <ul>
-          <li> As a Web Developer, I hold a Bachelor's degree in Computer Science from 
-                Universum College, where I developed a strong foundation in web technologies.</li>
+<h3>Experience</h3>
+<ul>
+  <li>
+    Worked as a Software Developer at StarLabs, developing and maintaining custom WordPress websites using PHP, Twig, Tailwind CSS, and Advanced Custom Fields (ACF). Contributed to building scalable, dynamic, and user-focused web solutions while collaborating within a modern development environment.
+  </li>
 
-                <li>  During my time at the university, I completed an internship that involved assisting 
-                 with the creation and maintenance of the university's website, allowing me to gain 
-                 practical experience in the field. </li>
-            </p>
-            <ul>
-               <li> Additionally, I had the opportunity to study abroad as an Erasmus student
-                 at Riga Technical University (RTU), which expanded my horizons
-                  and enriched my academic and practical knowledge.</li>
-                  <li> To further enhance my expertise and stay up-to-date with industry trends,
-                     I have also completed several online courses in web development. 
-                     These courses have enabled me to continuously grow as a developer 
-                     and stay ahead in this rapidly evolving field.
-      </ul>
+  <li>
+    Completed a Web Developer Internship at Universum College, where I assisted in website development, responsive user interface implementation, performance optimization, and ongoing website maintenance using modern web technologies.
+  </li>
+
+  <li>
+    Earned a Bachelor's Degree in Computer Science from Universum College, gaining a strong foundation in software engineering, web development, databases, algorithms, and problem-solving methodologies.
+  </li>
+
+  <li>
+    Participated in the Erasmus Exchange Program at Riga Technical University (RTU), studying Artificial Intelligence, Database Management Systems, Knowledge Management, and Computer-Aided Problem Solving in an international academic environment.
+  </li>
+</ul>
+
     </div>
 
     <div class="interests hidden-right">
-     <h3>Interests</h3>
-    <ul>
-      <li>I am passionate about creating websites that balance creativity and functionality, ensuring every project is modern, efficient, and user-friendly.</li>
-     <br>
-      <li>I enjoy collaborating with clients to turn their ideas into impactful digital solutions that look great and deliver an excellent user experience.</li>
-      <br>
-      <li>I am very excited to embrace opportunities to learn new things, even in areas I haven’t explored before, and I quickly adapt to mastering them.</li>
-     <br>
-      <li>Continuous learning is important to me—I actively seek new opportunities to refine my skills and stay ahead in the ever-evolving world of web development.</li>
-    </ul>
-  </div>
+<h3>Professional Interests</h3>
+<ul>
+  <li>
+    Passionate about delivering high-quality web solutions that balance performance, functionality, and user experience while addressing real-world business needs.
+  </li>
+<br>
+  <li>
+    Particularly interested in WordPress development, frontend engineering, and building scalable applications using modern development frameworks and tools.
+  </li>
+<br>
+  <li>
+    Enjoy collaborating on projects that require both technical problem-solving and creative thinking to deliver meaningful digital experiences.
+  </li>
+<br>
+  <li>
+    Dedicated to lifelong learning and continuous improvement, with a strong interest in emerging technologies, software development trends, and industry innovation.
+  </li>
+</ul>
 </section>
 
   <section id="projects" class="section projects-section">
     <h2>My Projects</h2>
-    <h3 class="tech-title">HTML | CSS | JAVASCRIPT | REACT </h3>
+    <h3 class="tech-title">JAVASCRIPT | REACT </h3>
     <div class="carousel-container">
         <button class="prev-btn">&#8592;</button>
         <div class="projects-container">
+             <div class="project-box">
+                <img src="assets/candle.png" alt="Project 6" class="project-img">"
+                <h3>Bed & Sun 🕯️</h3>
+                <p>Online shop for eco-friendly handcrafted candles.</p>
+                <br>
+                <a href="https://dafinahyseni1.github.io/bedandsun-Website/" class="project-btn" target="_blank">View Project</a>
+            </div>
                <div class="project-box">
-                <img src="Gustavo.png" alt="Project 6" class="project-img">
+                <img src="assets/Gustavo.png" alt="Project 6" class="project-img">
                 <h3>Gusto Italian</h3>
                 <p>A sleek site for authentic Italian dining, menu & bookings.</p>
                 <br>
                 <a href="https://dafinahyseni1.github.io/Gusto-Restaurant-Website/" class="project-btn" target="_blank">View Project</a>
             </div>
              <div class="project-box">
-                <img src="Mindful.png" alt="Project 5" class="project-img">
+                <img src="assets/Mindful.png" alt="Project 5" class="project-img">
                 <h3>Mental Health Support🌱</h3>
                 <p>A platform with resources, tools, and a responsive interface.</p>
                 <br>
                 <a href="https://dafinahyseni1.github.io/MentalHealth-Support-Website/" class="project-btn" target="_blank">View Project</a>
             </div>
                  <div class="project-box">
-                <img src="SkyScape.png" alt="Project 3" class="project-img">
+                <img src="assets/SkyScape.png" alt="Project 3" class="project-img">
                 <h3>SkyScape Travles ✈︎ </h3>
                 <p>An online platform for booking flight reservations.
                 </p>
                 <br>
-                <a href="https://dafinahyseni1.github.io/SkyScape-Website/" class="project-btn" target="_blank">View Project</a>
+                <a href="https://dafinahyseni1.github.io/SkyScapeWebsite/" class="project-btn" target="_blank">View Project</a>
             </div>
             <div class="project-box">
-                <img src="cyber-security.png" alt="Project 2" class="project-img">
+                <img src="assets/cyber-security.png" alt="Project 2" class="project-img">
                 <h3>CyberSecure AI 🌐</h3>
                 <p> An online platform to keep ur social medias safe.</p>
                 <br>
                 <a href="https://dafinahyseni1.github.io/CyberSecureWebsite/" class="project-btn" target="_blank">View Project</a>
             </div>
             <div class="project-box">
-                <img src="coffee-shop.png" alt="Project 6" class="project-img">
+                <img src="assets/coffee-shop.png" alt="Project 6" class="project-img">
                 <h3>Coffee-shop</h3>
                 <p>An online platform to order your favorite coffee.</p>
                 <br>
                 <a href="https://dafinahyseni1.github.io/Coffee-Shop-Website/" class="project-btn" target="_blank">View Project</a>
             </div>
-             <div class="project-box">
-                <img src="candle.png" alt="Project 6" class="project-img">
-                <h3>Bed & Sun 🕯️</h3>
-                <p>Online shop for eco-friendly handcrafted candles.</p>
-                <br>
-                <a href="https://dafinahyseni1.github.io/CandleShop-Website/" class="project-btn" target="_blank">View Project</a>
-            </div>
             <div class="project-box">
-                <img src="Screenshot (255).png" alt="Project 6" class="project-img">
-                <h3> Yoga Journal 🧎‍♀️</h3>
-                <p>It helps users track yoga practices
-                    <br> learn poses, and stay consistent.</p>
-                <br>
-                <a href="https://dafinahyseni1.github.io/Yoga-Journal-Website/" class="project-btn" target="_blank">View Project</a>
-            </div>
-            <div class="project-box">
-                <img src="weatherapp.png" alt="Project 4" class="project-img">
-                <h3>Weather App 🌦️</h3>
+                <img src="assets/weatherapp.png" alt="Project 4" class="project-img">
+                <h3>Weather Application 🌦️</h3>
                 <p>Search weather by city or country name.</p>
                 <br>
                      <a href="https://dafinahyseni1.github.io/Weather-App/" class="project-btn" target="_blank">View Project</a>
             </div>
-            <div class="project-box">
-                <img src="quiz.png" alt="Project 6" class="project-img">
-                <h3>Quiz | JavaScript </h3>
-                <p>Interactive JavaScript quiz with 50 questions. </p>
-                <br>
-                <a href="https://dafinahyseni1.github.io/quiz-JavaScript/" class="project-btn" target="_blank">View Project</a>
-            </div>
                   <div class="project-box">
-                <img src="cyber-dashboard.png" alt="Project 6" class="project-img">
+                <img src="assets/cyber-dashboard.png" alt="Project 6" class="project-img">
                 <h3> Cyber-Dashboard</h3>
                 <p>React app for cybersecurity resources. </p>
                 <br>
                 <a href="https://github.com/DafinaHyseni1/cyber-dashboard" class="project-btn" target="_blank">View Project</a>
+            </div>
+              <div class="project-box">
+                <img src="assets/user-management.png" alt="Project 6" class="project-img">
+                <h3> User-management</h3>
+                <p>React app with Redux, Ant Design, and CRUD features.</p>
+                <br>
+                <a href="https://github.com/DafinaHyseni1/User-Management" class="project-btn" target="_blank">View Project</a>
             </div>
              
         </div>
@@ -173,101 +198,97 @@
     </div>
 </section>
 
-<section id="figma-projects" class="section projects-section">
-    <h3 class="tech-title">Web Design with FIGMA</h3>
-    <div class="carousel-container">
-      <button class="prev-btn">&#8592;</button>
-      <div class="projects-container">
-        <div class="project-box">
-          <img src="figma.jpg" alt="Figma Project 1" class="project-img">
-          <h3>Travel Deals Website 🗺️</h3>
-          <p>Designed in Figma to showcase weekly adventure deals and exclusive offers.</p>
-          <br>
-          <a href="https://drive.google.com/file/d/1N10VyyKNUDunyEvwfrdxXO0wYcRfBNd7/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
-        </div>
-        <div class="project-box">
-          <img src="Figma 5.jpg" alt="Figma Project 2" class="project-img">
-          <h3>SkinCare Website 💆‍♀️🌿</h3>
-          <p>A Figma-designed site for skincare products.</p>
-          <br>
-          <a href="https://drive.google.com/file/d/14DO2S9XyJNfaVOG51iJtOmip-1lEN2Hw/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
-        </div>
-        <div class="project-box">
-          <img src="Figma 3.jpg" alt="Figma Project 3" class="project-img">
-          <h3>Real Estate Website 🏚 </h3>
-          <p>Designed in Figma to make property buying simple and transparent.</p>
-          <br>
-          <a href="https://drive.google.com/file/d/1t-PRNVyMOKSdpCyPUGN6XGKAc-hQx-88/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
-        </div>
-        <div class="project-box">
-          <img src="Figma 4.jpg" alt="Figma Project 4" class="project-img">
-          <h3>Cake Shop Website 🎂</h3>
-          <p>A Figma design for stylish, delicious birthday cakes.</p>
-          <br>
-          <a href="https://drive.google.com/file/d/1QmSnqHPyk7ikPb6Nfg6S2b7C4hdtRaah/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
-        </div>
-      <button class="next-btn">&#8594;</button>
-    </div>
-  </section>
-  
 
 <section id="figma-projects" class="section projects-section">
-    <h3 class="tech-title">WORDPRESS | WOOCOMMERCE</h3>
+    <h3 class="tech-title">WORDPRESS | PHP | WOOCOMMERCE</h3>
     <div class="carousel-container">
       <button class="prev-btn">&#8592;</button>
       <div class="projects-container">
-        <div class="project-box">
-          <img src="candlebliss.png" alt="Figma Project 1" class="project-img">
-          <h3>Candle Bliss</h3>
-          <p>A WooCommerce-powered WordPress shop for selling candles online.</p>
+         <div class="project-box">
+          <img src="assets/home.png" alt="Figma Project 1" class="project-img">
+          <h3>Yoga Studio </h3>
+          <p>a custom WordPress theme built with PHP, MySQL, and ACF, featuring a server-rendered CMS architecture.</p>
           <br>
-          <a href="https://drive.google.com/file/d/1utA1icBI7JbDhQLFp-COkX58GnSLtYTL/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
+          <a href="https://github.com/DafinaHyseni1/zen-yoga-studio" class="project-btn" target="_blank">View Project</a>
         </div>
         <div class="project-box">
-          <img src="heatwaveswim.png" alt="Figma Project 3" class="project-img">
+          <img src="assets/heatwaveswim.png" alt="Figma Project 3" class="project-img">
           <h3>🌊 Heatwave Swim</h3>
           <p>A stylish WooCommerce WordPress store for bikini lines, offering a modern shopping experience for swimwear.</p>
           <br>
           <a href="https://drive.google.com/file/d/1Ft0ie9-_9M9uWl8GNt2Uq8t-j4lrLa83/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
         </div>
           <div class="project-box">
-          <img src="bookstore.png" alt="Figma Project 3" class="project-img">
+          <img src="assets/bookstore.png" alt="Figma Project 3" class="project-img">
           <h3>Brianna Wiest Books </h3>
           <p>An online WordPress shop showcasing and selling Brianna Wiest’s books with WooCommerce integration.</p>
           <br>
-          <a href="https://drive.google.com/file/d/1i633OftU5nhwM86umqp49fESAygLqxRY/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
-        </div>
-            <div class="project-box">
-          <img src="wellness.png" alt="Figma Project 2" class="project-img">
-          <h3>🌿 Wellness by Dafina</h3>
-          <p>A WordPress wellness website promoting nutrition, lifestyle coaching, and healthy living.</p>
-          <br>
-          <a href="https://drive.google.com/file/d/1_ks8aztjJtf23s3eLUpRlQUL_4qQbidR/view?usp=drive_link" class="project-btn" target="_blank">View Project</a>
+          <a href="https://drive.google.com/file/d/1We3j4Mzy7EhrOkIX2CVFgtxfqo_i8JHj/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
         </div>
       <button class="next-btn">&#8594;</button>
     </div>
+    
   </section>
+
+
+<section id="figma-projects" class="section projects-section">
+    <h3 class="tech-title">Web Design with FIGMA</h3>
+    <div class="carousel-container">
+      <button class="prev-btn">&#8592;</button>
+      <div class="projects-container">
+        <div class="project-box">
+          <img src="assets/figma.jpg" alt="Figma Project 1" class="project-img">
+          <h3>Travel Deals Website 🗺️</h3>
+          <p>Designed in Figma to showcase weekly adventure deals and exclusive offers.</p>
+          <br>
+          <a href="https://drive.google.com/file/d/1N10VyyKNUDunyEvwfrdxXO0wYcRfBNd7/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-box">
+          <img src="assets/Figma 5.jpg" alt="Figma Project 2" class="project-img">
+          <h3>SkinCare Website 💆‍♀️🌿</h3>
+          <p>A Figma-designed site for skincare products.</p>
+          <br>
+          <a href="https://drive.google.com/file/d/14DO2S9XyJNfaVOG51iJtOmip-1lEN2Hw/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
+        </div>
+        <div class="project-box">
+          <img src="assets/Figma 3.jpg" alt="Figma Project 3" class="project-img">
+          <h3>Real Estate Website 🏚 </h3>
+          <p>Designed in Figma to make property buying simple and transparent.</p>
+          <br>
+          <a href="https://drive.google.com/file/d/1t-PRNVyMOKSdpCyPUGN6XGKAc-hQx-88/view?usp=sharing" class="project-btn" target="_blank">View Project</a>
+        </div>
+    </div>
+  </section>
+  
+
 
 <section id="contact" class="section contact-section">
     <h2>Contact Me</h2>
     <div class="contact-container">
-      <div class="contact-form">
-            <form>
-                <div class="input-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="input-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="contact-btn">Send Message</button>
-            </form>
+     <form id="contact-form">
+    <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" required>
+    </div>
+
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" required>
+    </div>
+
+    <div class="input-group">
+        <label>Message</label>
+        <textarea id="message" rows="5" required></textarea>
+    </div>
+
+ <button type="submit" class="contact-btn">Send Message</button>
+</form>
         </div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+
 
         <div class="contact-icons">
             <div class="contact-icon">
