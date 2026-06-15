@@ -367,7 +367,7 @@ button:hover {
 
     .moon {
         top: -180px; 
-        left: 40%;
+        left: 30%;
         transform: translateX(-50%);
         transition: all 0.9s ease;
         animation: glowPulse 3s ease-in-out infinite;
@@ -382,7 +382,7 @@ button:hover {
 
     .moon {
         top: -180px; 
-        left: 40%;
+        left: 30%;
         transform: translateX(-50%);
         transition: all 0.9s ease;
         animation: glowPulse 3s ease-in-out infinite;
