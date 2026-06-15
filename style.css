@@ -363,10 +363,20 @@ button:hover {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 740px) {
 
     .moon {
-        top: -160px; 
+        top: -180px; 
+        left: 5%;
+        transform: translateX(-50%);
+        transition: all 0.9s ease;
+        animation: glowPulse 3s ease-in-out infinite;
+    }
+
+    @media (min-width: 340px) {
+
+    .moon {
+        top: -180px; 
         left: 5%;
         transform: translateX(-50%);
         transition: all 0.9s ease;
